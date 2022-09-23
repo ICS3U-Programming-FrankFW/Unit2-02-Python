@@ -1,18 +1,29 @@
-# !/usr/bin/env python3
-# Created By: Your Frankie fox 
-# Date: Sept 22, 2022
-# This program calculates the area & perimeter of a rectangle
+#!/usr/bin/env python3
+# Created by: Ms Raffin
+# Created on: Apr. 27, 2021
+# This program asks the user for the length and
+# width of the rectangle in mm. It then
+# calculates and displays the area and
+# perimeter.
+import math
 
-def main ():
-    print("For a rectangle with a length of 3 and width of 2:")
-    print("The area is :{}cm^2".format(3*2))
-    print("The perimeter is :{}cm".format(2*(3+2)))
-    print("For a rectangle with a length of 6 and width of 10:")
-    print("The area is :{}cm^2".format(6*10))
-    print("The perimeter is :{}cm".format(2*(6+10)))
-    print("For a rectangle with a length of 20 and width of 5:")
-    print("The area is :{}cm^2".format(20*5))
-    print("The perimeter is :{}cm".format(2*(20+5)))
+
+def main():
+    # input
+    print("Today we will calculate the area and")
+    print("perimeter of a rectangle")
+    length = int(input("Enter the length (mm): "))
+    width = int(input("Enter the width (mm): "))
+
+    # process
+    area = length * width
+    perimeter = 2 * (length + width)
+
+    # output
+    print("")
+    print("Area = {} mm^2".format(area))
+    print("Perimeter = {} mm".format(perimeter))
+
 
 if __name__ == "__main__":
     main()
